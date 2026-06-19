@@ -1,9 +1,11 @@
 /*
 Efficient Language Detector extrasmall standalone browser build.
-Generated from src/entries/static.extrasmall.js and its dependencies.
+Derived from efficient-language-detector-js.
+Modified to expose globalThis.eld for plain browser extension usage.
 
 Copyright 2023-2025 Nito T.M.
 License: Apache-2.0
+Source: https://github.com/nitotm/efficient-language-detector-js
 */
 (function (global) {
   'use strict';
@@ -87,7 +89,8 @@ License: Apache-2.0
   License https://www.apache.org/licenses/LICENSE-2.0 Apache-2.0
   Author Nito T.M. (https://github.com/nitotm)
   Package npmjs.com/package/eld
-  */
+  */
+
   const languageData = {
       langCodes: {}, langScore: [], ngrams: {}, type: '', avgScore: avgScore
   }
@@ -192,7 +195,8 @@ License: Apache-2.0
   License https://www.apache.org/licenses/LICENSE-2.0 Apache-2.0
   Author Nito T.M. (https://github.com/nitotm)
   Package npmjs.com/package/eld
-  */
+  */
+
   class LanguageResult {
       /**
        * Creates an instance of LanguageResult.
@@ -276,7 +280,8 @@ License: Apache-2.0
   License https://www.apache.org/licenses/LICENSE-2.0 Apache-2.0
   Author Nito T.M. (https://github.com/nitotm)
   Package npmjs.com/package/eld
-  */
+  */
+
   const saveLanguageSubset = (function () {
       /**
        * Creates a ngrams database file download, only with the languages included in the langArray subset
@@ -383,7 +388,8 @@ License: Apache-2.0
   License https://www.apache.org/licenses/LICENSE-2.0 Apache-2.0
   Author Nito T.M. (https://github.com/nitotm)
   Package npmjs.com/package/eld
-  */
+  */
+
   
   // Project is ES2015
   const eld = (function () {
